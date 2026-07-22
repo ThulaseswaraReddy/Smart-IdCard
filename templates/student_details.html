@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+<div class="container py-5">
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            {% for category, message in messages %}
+                <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                    {{ message }}
+                    <button type="button"
+                            class="btn-close"
+                            data-bs-dismiss="alert">
+                    </button>
+                </div>
+            {% endfor %}
+        {% endif %}
+    {% endwith %}
+
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3>Student Information</h3>
+                </div>
+                <div class="card-body">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th width="35%">Student Name</th>
+                            <td>{{ student.student_name.upper() }}</td>
+                        </tr>
+                        <tr>
+                            <th>Roll Number</th>
+                            <td>{{ student.rollno.upper() }}</td>
+                        </tr>
+                        <tr>
+                            <th>Department</th>
+                            <td>{{ student.department.upper() }}</td>
+                        </tr>
+                        <tr>
+                            <th>Gender</th>
+                            <td>{{ student.gender.upper() }}</td>
+                        </tr>
+                        <tr>
+                            <th>Phone</th>
+                            <td>{{ student.phone }}</td>
+                        </tr>
+                        <tr>
+                            <th>Address</th>
+                            <td>{{ student.address.upper() }}</td>
+                        </tr>
+                        <tr>
+                            <th>Blood Group</th>
+                            <td>{{ student.blood_group.upper() }}</td>
+                        </tr>
+                        <tr>
+                            <th>Parent Contact</th>
+                            <td>{{ student.parentnumber }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
