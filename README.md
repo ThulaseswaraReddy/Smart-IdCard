@@ -66,10 +66,10 @@ Smart-ID-Card-System/
 ![Dashboard](dashboard.png)
 
 ### Register Student
-![Register](studentregister.png)
+![Register](studentregister.jpeg)
 
 ### Student Records
-![Record](studentrecords.jpeg)
+![Record](studentrecords.png)
 
 ### Student Details
 ![Detail](studentdetails.png)
