@@ -57,6 +57,23 @@ Smart-ID-Card-System/
     └── student_details.html
 ```
 ---
+## 📸Screenshots
+```
+### Login Page
+![Login](admin.png)
+
+### Dashboard
+![Dashboard](dashboard.png)
+
+### Register Student
+![Register](studentregister.png)
+
+### Student Records
+![Record](studentrecords.png)
+
+### Student Details
+![Detail](studentdetails.png)
+```
 
 ## ⚙️ Installation
 1. Clone the repository
