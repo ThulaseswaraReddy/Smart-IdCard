@@ -69,7 +69,7 @@ Smart-ID-Card-System/
 ![Register](studentregister.png)
 
 ### Student Records
-![Record](studentrecords.png)
+![Record](studentrecords.jpeg)
 
 ### Student Details
 ![Detail](studentdetails.png)
