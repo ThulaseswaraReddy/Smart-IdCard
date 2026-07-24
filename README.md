@@ -58,7 +58,7 @@ Smart-ID-Card-System/
 ```
 ---
 ## 📸Screenshots
-```
+
 ### Login Page
 ![Login](admin.png)
 
@@ -73,7 +73,7 @@ Smart-ID-Card-System/
 
 ### Student Details
 ![Detail](studentdetails.png)
-```
+
 
 ## ⚙️ Installation
 1. Clone the repository
