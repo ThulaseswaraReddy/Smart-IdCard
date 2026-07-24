@@ -29,7 +29,6 @@ A Flask-based Smart ID Card Management System developed using Python, Flask, MyS
 - MySQL
 - Bootstrap 5
 - HTML
-- CSS
 - QRCode
 - Pillow
 - Werkzeug
