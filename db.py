@@ -1,8 +1,10 @@
+
 import mysql.connector
 connection=mysql.connector.connect(
-    host="localhost",
+    host="hayabusa.proxy.rlwy.net",
+    port=20927,
     user="root",
-    password="YOUR_MYSQL_PASSWORD",
-    database="SmartIdCard"
+    password="YOUR_PASSWORD",
+    database="railway"
 )
 cursor=connection.cursor(dictionary=True)
