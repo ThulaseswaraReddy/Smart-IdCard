@@ -1,7 +1,6 @@
 import os
 import mysql.connector
 
-# Reads cloud environment variables when deployed, or uses your local credentials as fallback
 connection = mysql.connector.connect(
     host=os.environ.get("DB_HOST", "localhost"),
     port=int(os.environ.get("DB_PORT", 3306)),
@@ -14,14 +13,3 @@ connection = mysql.connector.connect(
 cursor = connection.cursor(dictionary=True)
 
 
-
-
-# import mysql.connector
-# connection=mysql.connector.connect(
-#     host="localhost",
-#     port=3306,
-#     user="root",
-#     password="6264",
-#     database="smartidcard"
-# )
-# cursor=connection.cursor(dictionary=True)
