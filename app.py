@@ -4,7 +4,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 import qrcode
 import os
 app=Flask(__name__)
-app.secret_key='SmartIdCard@2026#FlaskProject'
+app.secret_key=os.environ.get('SECRET_KEY','SmartIdCard@2026#FlaskProject')
 cursor=connection.cursor(dictionary=True)
 @app.route('/')
 def home():
@@ -184,7 +184,8 @@ def delete_student(id):
 def generate_qr(rollno):
     if 'admin' not in session:
         return redirect(url_for('login'))
-    link="http://127.0.0.1:5000/student/"+rollno
+    # link="http://127.0.0.1:5000/student/"+rollno
+    link=url_for('student',rollno=rollno,_external=True)
     img=qrcode.make(link)
     filename=rollno+".png"
     update='update student set qrcode=%s where rollno=%s'
