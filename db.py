@@ -1,8 +1,8 @@
 
 import mysql.connector
 connection=mysql.connector.connect(
-    host="hayabusa.proxy.rlwy.net",
-    port=20927,
+    host="mysql.railway.internal",
+    port=3306,
     user="root",
     password="IOOvrJIozRKwYOTljpYXOzPJNkiyslYv",
     database="railway"
