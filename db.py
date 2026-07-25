@@ -4,7 +4,7 @@ connection=mysql.connector.connect(
     host="hayabusa.proxy.rlwy.net",
     port=20927,
     user="root",
-    password="YOUR_PASSWORD",
+    password="IOOvrJIozRKwYOTljpYXOzPJNkiyslYv",
     database="railway"
 )
 cursor=connection.cursor(dictionary=True)
