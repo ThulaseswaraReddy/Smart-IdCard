@@ -1,7 +1,7 @@
 # 🎓 Smart ID Card Management System
 A Flask-based Smart ID Card Management System developed using Python, Flask, MySQL, Bootstrap, and QR Code technology. This application allows an administrator to manage student records and generate QR codes that display student information when scanned.
 
-## 🌐Live Demo : SmartIdCard
+## 🌐Live Demo : [SmartIdCard](https://smart-idcard.onrender.com)
 ## 🚀 Features
 - Admin Login (Password Hashing)
 - Secure Session Management
