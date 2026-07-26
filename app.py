@@ -5,7 +5,7 @@ import qrcode
 import os
 app=Flask(__name__)
 app.secret_key=os.environ.get('SECRET_KEY','SmartIdCard@2026#FlaskProject')
-cursor=connection.cursor(dictionary=True)
+cursor=connection.cursor(dictionary=True,buffered=True)
 @app.route('/')
 def home():
     return redirect(url_for('login'))

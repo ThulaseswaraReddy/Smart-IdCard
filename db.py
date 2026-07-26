@@ -10,6 +10,6 @@ connection = mysql.connector.connect(
     ssl_disabled=(os.environ.get("DB_HOST") is None)
 )
 
-cursor = connection.cursor(dictionary=True)
+cursor = connection.cursor(dictionary=True,buffered=True)
 
 
