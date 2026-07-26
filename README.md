@@ -127,17 +127,6 @@ The dashboard displays:
 
 ---
 
-## 📷 Screenshots
-
-Add screenshots here:
-
-- Login Page
-- Dashboard
-- Add Student
-- View Students
-- QR Code
-- Student Details
-
 ---
 
 ## 👨‍💻 Author
